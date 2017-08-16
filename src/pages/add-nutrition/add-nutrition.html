@@ -1,0 +1,36 @@
+<!--
+  Generated template for the AddNutritionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>เพิ่มโภชนาการ</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+    <ion-label fixed>ชื่อเมนู</ion-label>
+    <ion-input type="text" value=""></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>โภชนาการ</ion-label>
+  <ion-select [(ngModel)]="toppings" multiple="true">
+    <ion-option>โปรตีน</ion-option>
+    <ion-option>ไขมัน</ion-option>
+    <ion-option>คาร์โบไฮเดรต</ion-option>
+    <ion-option>เกลือแร่</ion-option>
+    <ion-option>วิตามิน</ion-option>
+  </ion-select>
+</ion-item>
+
+</ion-content>

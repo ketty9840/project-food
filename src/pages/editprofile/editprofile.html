@@ -1,0 +1,38 @@
+<!--
+  Generated template for the EditprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>แก้ไขข้อมูลส่วนตัว</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+</ion-list>
+
+<button ion-button round  color="dark"(click)="gotocategory()">บันทึก</button>
+<button ion-button round  color="dark"(click)="gotohome()">ยกเลิก</button>
+
+</ion-content>

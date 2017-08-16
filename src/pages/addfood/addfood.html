@@ -1,0 +1,101 @@
+<!--
+  Generated template for the AddfoodPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>เพิ่มสูตรอาหาร</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+  <ion-item>
+    <ion-label>ประเภทอาหาร</ion-label>
+      <ion-select [(ngModel)]="category">
+      <ion-option value="curry">ประเภทแกง</ion-option>
+      <ion-option value="boil">ประเภทต้ม</ion-option>
+      <ion-option value="fried">ประเภททอด</ion-option>
+      <ion-option value="puff">ประเภทผัด</ion-option>
+      <ion-option value="rice">ประเภทข้าว</ion-option>
+      <ion-option value="mchili">ประเภทน้ำพริก</ion-option>
+      </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>ชื่ออาหาร</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  floating>ส่วนประกอบ</ion-label>
+    <ion-textarea ></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  floating>วิธีทำ</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Video (เพิ่ม ลิงค์ URL)</ion-label>
+    <ion-input type="url"></ion-input>
+  </ion-item>
+</ion-list>
+
+
+<ion-item>
+  <ion-label >โภชนาการ</ion-label>
+  <ion-select [(ngModel)]="toppings" multiple="true">
+    <ion-option>โปรตีน</ion-option>
+    <ion-option>ไขมัน</ion-option>
+    <ion-option>คาร์โบไฮเดรต</ion-option>
+    <ion-option>เกลือแร่</ion-option>
+    <ion-option>วิตามิน</ion-option>
+  </ion-select>
+</ion-item>
+<br/>
+
+
+<ion-card>
+  <ion-card-header style="margin-left:55px; font-size:16px;">
+    รายละเอียดโภชนาการ
+  </ion-card-header>
+  <ion-card-content>
+    โปรตีน เช่น เนื้อสัตว์ ไข่ นม ถั่ว
+  </ion-card-content>
+  <ion-card-content>
+    ไขมัน เช่น พืช  เนื้อสัตว์
+  </ion-card-content>
+  <ion-card-content>
+    คาร์โบไฮเดรต เช่น ข้าว แป้ง น้ำตาล เผือก มัน
+  </ion-card-content>
+  <ion-card-content>
+    เกลือแร่ เช่น ผักใบเขียวและพืชผักชนิดอื่นๆ
+  </ion-card-content>
+  <ion-card-content>
+    วิตามิน เช่น ผลไม้ต่างๆ
+  </ion-card-content>
+</ion-card>
+
+<!-- <button ion-button round  color="dark"(click)="gotoAdmin()">เพิ่มโภชนาการ</button>-->
+
+
+<ion-row>
+  <ion-col style="margin-left:30px;">
+    <button ion-button round  color="dark"(click)="gotocurry()">บันทึก</button>
+  </ion-col>
+  <ion-col> 
+    <button ion-button round  color="dark"(click)="gotocurry()">ยกเลิก</button>
+  </ion-col>
+</ion-row>
+</ion-content>
