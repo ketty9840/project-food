@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams,AlertController,ToastController } from 'ionic-angular';
 import { RegisterServiceProvider} from './../../providers/register-service/register-service';
 import { Observable } from 'rxjs/Observable';
+import mongoose from 'mongoose';
+import  { HttpModule } from '@angular/http';
 
 
 import { CategoryPage } from '../category/category';
@@ -31,16 +33,16 @@ export class RegisterPage {
   }
 
   gotocategory() {
-     this.navCtrl.push(CategoryPage);
+    this.navCtrl.push(CategoryPage);
+  
     let prompt = this.alertCtrl.create({
     title: 'สมัครสมาชิก',
-      message: "สมัครสมาชิกเรียบร้อยแล้วค่ะ/ครับ!"
-    });
+    message: "สมัครสมาชิกเรียบร้อยแล้วค่ะ/ครับ!",
+ 
+  });
     prompt.present();
   }
-    
-
-      /*
+    /*
       inputs: [
         {
           name: 'text',
@@ -69,11 +71,11 @@ export class RegisterPage {
           }
         }
       ]
+  
     });
     prompt.present();
   }
-
-  */
+*/
 
   
   gotohome() {

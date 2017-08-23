@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
   for more info on providers and Angular DI.
 */
 const CONFIG = {
-  apiUrl: 'http://localhost:8100/',
+  apiUrl: 'http://localhost:3100/',
 };
 
 
